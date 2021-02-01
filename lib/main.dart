@@ -75,11 +75,15 @@ class _MyHomePageState extends State<MyHomePage> {
 					Align(
 						alignment: Alignment.center,
 						child: Row(
-							mainAxisAlignment: MainAxisAlignment.spaceAround,
+							mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 							children: [
 								TextButton(
 									style: TextButton.styleFrom(
 										backgroundColor: const Color(0xFF2AB2C9),
+										minimumSize: Size(175, 100),
+										shape: RoundedRectangleBorder(
+											borderRadius: BorderRadius.circular(22.0),
+										),
 									),
 									child: Text(
 										"Je suis un client",
@@ -88,11 +92,15 @@ class _MyHomePageState extends State<MyHomePage> {
 								TextButton(
 									style: TextButton.styleFrom(
 										backgroundColor: const Color(0xFF2AB2C9),
+										minimumSize: Size(175, 100),
+										shape: RoundedRectangleBorder(
+												borderRadius: BorderRadius.circular(22.0),
+										),
 									),
 									child: Text(
 										"Je suis un serveur",
 									)
-								)
+								),
 							],
 						),
 					),
