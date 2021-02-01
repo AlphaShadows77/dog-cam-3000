@@ -104,6 +104,14 @@ class _MyHomePageState extends State<MyHomePage> {
 							],
 						),
 					),
+					Container(
+						alignment: Alignment.bottomCenter,
+						child: Image.network(
+							'https://cdn.pixabay.com/photo/2020/12/25/09/46/dog-5858985_960_720.jpg',
+							width: 250,
+						),
+						margin: EdgeInsets.only(bottom: 75.0),
+					),
 				],
 			),
 		);
