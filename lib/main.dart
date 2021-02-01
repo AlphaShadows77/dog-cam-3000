@@ -60,15 +60,43 @@ class _MyHomePageState extends State<MyHomePage> {
 		// than having to individually change instances of widgets.
 		return Scaffold(
 			backgroundColor: const Color(0xFF56DEF5),
-			body: Align(
-				alignment: Alignment.topCenter,
-				child: Padding(
-				  padding: const EdgeInsets.only(top: 100.0),
-				  child: Text (
-						'Dog cam 3000',
-						style: TextStyle(fontSize: 31.0),
-				  ),
-				),
+			body: Stack(
+				children: [
+					Align(
+						alignment: Alignment.topCenter,
+						child: Padding(
+							padding: const EdgeInsets.only(top: 100.0),
+							child: Text (
+								'Dog cam 3000',
+								style: TextStyle(fontSize: 31.0),
+							),
+						),
+					),
+					Align(
+						alignment: Alignment.center,
+						child: Row(
+							mainAxisAlignment: MainAxisAlignment.spaceAround,
+							children: [
+								TextButton(
+									style: TextButton.styleFrom(
+										backgroundColor: const Color(0xFF2AB2C9),
+									),
+									child: Text(
+										"Je suis un client",
+									),
+								),
+								TextButton(
+									style: TextButton.styleFrom(
+										backgroundColor: const Color(0xFF2AB2C9),
+									),
+									child: Text(
+										"Je suis un serveur",
+									)
+								)
+							],
+						),
+					),
+				],
 			),
 		);
 	}
